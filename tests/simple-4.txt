@@ -1,0 +1,10 @@
+8 3
+abc
+bca
+cab
+cba
+bac
+cde
+edc
+ecd
+
