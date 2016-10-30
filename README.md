@@ -24,6 +24,21 @@ This repository contains various answers and test cases for the [TalentHub](http
   * For each canonical necklace, "sorted insert" it in a list that starts empty
   * Count the resulting list
 
+## C solution
+
+`necklace.c` is an implementation of `necklace_fast.rb`'s algorithm in C. Its
+performance results are promising.
+Here is how I compile it, then run the tests:
+
+```sh
+$ gcc -Wall necklace.c -o necklace
+$ ./tester.rb necklace
+0.0257s <= tests/example-1.txt
+0.0268s <= tests/extra_spaces-1.txt
+0.0746s <= tests/max_size-1.txt
+0.0759s <= tests/max_size-101.txt
+```
+
 ## Testing
 
 ### Test scenarios
