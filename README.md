@@ -23,3 +23,33 @@ This repository contains various answers and test cases for the [TalentHub](http
     position (alphabetical order), and discard duplicates in the process.
   * For each canonical necklace, "sorted insert" it in a list that starts empty
   * Count the resulting list
+
+## Testing
+
+### Test scenarios
+
+The `tests` folder contains test cases. Each file contains the exact input to be
+passed to the solution script. For example, to test the example test on
+`necklace_easy.rb`, run:
+
+```sh
+$ ./necklace_easy.rb < tests/example-1.txt
+1
+```
+
+Each test file name ends with a dash and the expected answer, before the `.txt`
+extension.
+
+### Tester script
+
+`tester.rb` is a script that takes a solution script as input, and will run the
+test suite, to output execution times or errors if wrong answer was returned.
+Example:
+
+```sh
+$./tester.rb necklace_fast.rb
+0.2338s <= tests/example-1.txt
+0.2428s <= tests/extra_spaces-1.txt
+0.3081s <= tests/max_size-1.txt
+0.3122s <= tests/max_size-101.txt
+```
